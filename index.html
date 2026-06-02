@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welspun AI · Intelligence Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+
+      <header class="site-header">
+        <div class="header-left">
+          <div class="logo-mark">W</div>
+          <div class="header-titles">
+            <span class="header-brand">WELSPUN AI</span>
+            <span class="header-subtitle">INTELLIGENCE LIBRARY · PIPE DIVISION</span>
+          </div>
+        </div>
+
+        <div class="header-center">
+          <div class="search-wrap">
+            <svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="8.5" cy="8.5" r="5.5"/>
+              <path d="M15 15l-3.5-3.5" stroke-linecap="round"/>
+            </svg>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search ideas, sections, impact…"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <span id="search-count" class="search-badge">0</span>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <div class="stat-block">
+            <span class="stat-num" id="total-count">—</span>
+            <span class="stat-label">IDEAS</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <span class="stat-num" id="section-count">—</span>
+            <span class="stat-label">SECTIONS</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="layout">
+        <aside class="sidebar">
+          <div class="sidebar-filters">
+            <button class="filter-pill active" data-complexity="all">All</button>
+            <button class="filter-pill" data-complexity="🟢">🟢 Quick</button>
+            <button class="filter-pill" data-complexity="🟡">🟡 Medium</button>
+            <button class="filter-pill" data-complexity="🔴">🔴 Complex</button>
+          </div>
+          <div id="ideas-list"></div>
+        </aside>
+
+        <main class="content-pane">
+          <div id="reading-pane">
+            <div class="empty-state">
+              <div class="empty-grid"></div>
+              <div class="empty-content">
+                <div class="empty-icon">
+                  <svg viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="12" y="43" width="72" height="10" rx="5" fill="currentColor" opacity="0.15"/>
+                    <rect x="12" y="43" width="72" height="10" rx="5" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="22" cy="48" r="5" fill="currentColor"/>
+                    <circle cx="74" cy="48" r="5" fill="currentColor"/>
+                    <rect x="43" y="12" width="10" height="72" rx="5" fill="currentColor" opacity="0.15"/>
+                    <rect x="43" y="12" width="10" height="72" rx="5" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="48" cy="22" r="5" fill="currentColor"/>
+                    <circle cx="48" cy="74" r="5" fill="currentColor"/>
+                    <circle cx="48" cy="48" r="7" fill="currentColor" opacity="0.3"/>
+                    <circle cx="48" cy="48" r="4" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h2 class="empty-title">SELECT A BLUEPRINT</h2>
+                <p class="empty-body">
+                  Browse 100 AI ideas built for Welspun's Pipe Division — each with a full architecture, tech stack, build steps, and cost breakdown.
+                </p>
+                <div class="empty-chips">
+                  <span class="empty-chip">100 blueprints</span>
+                  <span class="empty-chip">7 sections</span>
+                  <span class="empty-chip">Welspun 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

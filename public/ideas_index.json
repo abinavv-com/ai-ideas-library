@@ -1,0 +1,702 @@
+[
+  {
+    "file": "001 - Meeting Action Item Compiler.md",
+    "title": "001 · Meeting → Action Item Compiler",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "002 - SAP Board Deck Automator.md",
+    "title": "002 · SAP → Board Deck Automator",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency, 💰 Cost Savings"
+  },
+  {
+    "file": "003 - SAP Code Translator.md",
+    "title": "003 · SAP Code Translator (Gujarati / Hindi)",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "004 - Port Congestion Alert Bot.md",
+    "title": "004 · Port Congestion Alert Bot",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency, 💰 Cost Savings"
+  },
+  {
+    "file": "005 - USD INR Oil Price Alert System.md",
+    "title": "005 · USD/INR & Oil Price Alert System",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "006 - Shift Handover Voice Summarizer.md",
+    "title": "006 · Shift Handover Voice Summarizer",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency, 🛡️ Safety"
+  },
+  {
+    "file": "007 - RFP Spec Sheet Reader.md",
+    "title": "007 · RFP / Spec Sheet Reader",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "008 - Maintenance Log Search Agent.md",
+    "title": "008 · Maintenance Log Search Agent (RAG)",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "009 - API 5L DNV Compliance Checker.md",
+    "title": "009 · API 5L / DNV Compliance Checker",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "🛡️ Safety/Compliance"
+  },
+  {
+    "file": "010 - Supplier Contract Risk Scanner.md",
+    "title": "010 · Supplier Contract Risk Scanner",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "🛡️ Safety, 💰 Cost Savings"
+  },
+  {
+    "file": "011 - Investment Assumptions Auditor.md",
+    "title": "011 · Investment Assumptions Auditor",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "012 - Bill of Lading OCR Extractor.md",
+    "title": "012 · Bill of Lading OCR Extractor",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency, 💰 Cost Savings"
+  },
+  {
+    "file": "013 - Customer Progress Report Generator.md",
+    "title": "013 · Customer Progress Report Generator",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "014 - Material Certificate Auto-Importer.md",
+    "title": "014 · Material Certificate (MTC) Auto-Importer",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "015 - Blanket PO Utilization Alert.md",
+    "title": "015 · Blanket PO Utilization Alert",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "016 - SOP Chatbot.md",
+    "title": "016 · SOP Chatbot",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "017 - Legal Compliance Calendar Bot.md",
+    "title": "017 · Legal Compliance Calendar Bot",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "🛡️ Safety/Compliance"
+  },
+  {
+    "file": "018 - Freight Invoice Auditor.md",
+    "title": "018 · Freight Invoice Auditor",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "019 - Export Incentive Calculator.md",
+    "title": "019 · Export Incentive Calculator (RoDTEP)",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "020 - Pipe Cut-Length Optimizer.md",
+    "title": "020 · Pipe Cut-Length Optimizer",
+    "section": "Quick Wins",
+    "complexity": "🟢 Week 1–4",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "021 - X-Ray Weld Defect Detector.md",
+    "title": "021 · X-Ray Weld Defect Detector (Edge AI)",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety, 💰 Cost Savings"
+  },
+  {
+    "file": "022 - Hydrostatic Test Pressure Anomaly Detector.md",
+    "title": "022 · Hydrostatic Test Pressure Anomaly Detector",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "023 - Coating Holiday False-Positive Filter.md",
+    "title": "023 · Coating Holiday False-Positive Filter",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "024 - Visual Coating Defect Camera System.md",
+    "title": "024 · Visual Coating Defect Camera System",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "025 - Bevel Angle Pipe Geometry Vision Auditor.md",
+    "title": "025 · Bevel Angle & Pipe Geometry Vision Auditor",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "026 - Pipe Stencil OCR Verifier.md",
+    "title": "026 · Pipe Stencil OCR Verifier",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "027 - Welding Operator Defect Correlation Tracker.md",
+    "title": "027 · Welding Operator Defect Correlation Tracker",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "028 - Flux Moisture Contamination Detector.md",
+    "title": "028 · Flux Moisture Contamination Detector",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "029 - Automated RCA Report Generator.md",
+    "title": "029 · Automated RCA Report Generator",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "030 - QA Sign-Off Queue Prioritizer.md",
+    "title": "030 · QA Sign-Off Queue Prioritizer",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "031 - Surface Rust Severity Classifier.md",
+    "title": "031 · Surface Rust Severity Classifier",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "032 - MTC Auto-Generator.md",
+    "title": "032 · MTC Auto-Generator (Pipe Release Document)",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "033 - NDT Inspector Fatigue Warning System.md",
+    "title": "033 · NDT Inspector Fatigue Warning System",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "034 - Shot Blast Profile Per-Pipe Tracker.md",
+    "title": "034 · Shot Blast Profile Per-Pipe Tracker",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "035 - Operator Skill-to-Project Matcher.md",
+    "title": "035 · Operator Skill-to-Project Matcher",
+    "section": "Quality & Inspection",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "036 - LSAW Forming Press Spring-Back Predictor.md",
+    "title": "036 · LSAW Forming Press Spring-Back Predictor",
+    "section": "Manufacturing & Process",
+    "complexity": "🔵 Month 4–6",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "037 - HSAW Strip Tension Auto-Controller.md",
+    "title": "037 · HSAW Strip Tension Auto-Controller",
+    "section": "Manufacturing & Process",
+    "complexity": "🔵 Month 4–6",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "038 - DI Furnace Melt Composition Estimator.md",
+    "title": "038 · DI Furnace Melt Composition Real-Time Estimator",
+    "section": "Manufacturing & Process",
+    "complexity": "🔵 Month 4–6",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "039 - Annealing Furnace Belt Speed Optimizer.md",
+    "title": "039 · Annealing Furnace Belt Speed Optimizer",
+    "section": "Manufacturing & Process",
+    "complexity": "🔵 Month 4–6",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "040 - Production OEE Live Dashboard.md",
+    "title": "040 · Production OEE Live Dashboard",
+    "section": "Manufacturing & Process",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "041 - WhatsApp Change Management System.md",
+    "title": "041 · WhatsApp → Formal Change Management System",
+    "section": "Manufacturing & Process",
+    "complexity": "🟢 Week 1–4",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "042 - Zinc Spray Nozzle Clog Predictor.md",
+    "title": "042 · Zinc Spray Nozzle Clog Predictor",
+    "section": "Manufacturing & Process",
+    "complexity": "🔵 Month 4–6",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "043 - Pipe Energy Cost Attribution Model.md",
+    "title": "043 · Pipe Energy Cost Attribution Model",
+    "section": "Manufacturing & Process",
+    "complexity": "🔵 Month 4–6",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "044 - Daily Production Output Live Counter.md",
+    "title": "044 · Daily Production Output Live Counter",
+    "section": "Manufacturing & Process",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "045 - Production What-If Schedule Simulator.md",
+    "title": "045 · Production \"What-If\" Schedule Simulator",
+    "section": "Manufacturing & Process",
+    "complexity": "🔵 Month 4–6",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "046 - Predictive Maintenance Dashboard.md",
+    "title": "046 · Predictive Maintenance Dashboard (Sensor-Ready Machines)",
+    "section": "Maintenance & Reliability",
+    "complexity": "🔵 Month 4–6",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "047 - Spare Parts Inventory Reality Check.md",
+    "title": "047 · Spare Parts Inventory Reality Check",
+    "section": "Maintenance & Reliability",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "048 - SAP PM Order Auto-Scheduler.md",
+    "title": "048 · SAP PM Order Smart Auto-Scheduler",
+    "section": "Maintenance & Reliability",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "049 - Overhead Crane Load Cycle Tracker.md",
+    "title": "049 · Overhead Crane Load & Cycle Tracker",
+    "section": "Maintenance & Reliability",
+    "complexity": "🔵 Month 4–6",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "050 - Thermal Camera Gearbox Monitor.md",
+    "title": "050 · Thermal Camera Gearbox Monitor",
+    "section": "Maintenance & Reliability",
+    "complexity": "🔵 Month 4–6",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "051 - Maintenance KPI Live Dashboard.md",
+    "title": "051 · Maintenance KPI Live Dashboard",
+    "section": "Maintenance & Reliability",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "052 - Vendor SLA Adherence Tracker.md",
+    "title": "052 · Vendor SLA Adherence Tracker",
+    "section": "Maintenance & Reliability",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "053 - Spares Auto-Purchase Requisition Bot.md",
+    "title": "053 · Spares Auto-Purchase Requisition Bot",
+    "section": "Maintenance & Reliability",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "054 - Machine Breakdown RCA Knowledge Base.md",
+    "title": "054 · Machine Breakdown RCA Knowledge Base",
+    "section": "Maintenance & Reliability",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "055 - Operator Qualification Digital Assessment.md",
+    "title": "055 · Operator Qualification Digital Assessment",
+    "section": "Maintenance & Reliability",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "056 - Steel Scrap Price Forecaster.md",
+    "title": "056 · Steel Scrap Price Forecaster",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "057 - Commodity Sentiment NLP Monitor.md",
+    "title": "057 · Commodity Sentiment NLP Monitor",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "058 - Landing Cost Calculator.md",
+    "title": "058 · Landing Cost Calculator (Automated)",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🟢 Week 1–4",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "059 - Bid Data Assembler.md",
+    "title": "059 · Bid Data Assembler (SAP → Bid Pack)",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "060 - Monte Carlo Bid Margin Simulator.md",
+    "title": "060 · Monte Carlo Bid Margin Simulator",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "061 - Ocean Freight Spot Rate Predictor.md",
+    "title": "061 · Ocean Freight Spot Rate Predictor",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🔵 Month 4–6",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "062 - Scrap Steel Gate Classifier.md",
+    "title": "062 · Scrap Steel Gate Classifier (Vision)",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🔵 Month 4–6",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "063 - Tariff Impact CBAM Exposure Calculator.md",
+    "title": "063 · Tariff Impact & CBAM Exposure Calculator",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety, 💰"
+  },
+  {
+    "file": "064 - Steel Coil Order Fast-Track Approval.md",
+    "title": "064 · Steel Coil Order Fast-Track Approval",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "065 - Vendor Reliability Scorecard.md",
+    "title": "065 · Vendor Reliability Scorecard",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "066 - SKU Rationalization Agent.md",
+    "title": "066 · SKU Rationalization Agent",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "067 - Export Document Auto-Preparer.md",
+    "title": "067 · Export Document Auto-Preparer",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "068 - Competitor Intelligence Monitor.md",
+    "title": "068 · Competitor Intelligence Monitor",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🏆 Competitive"
+  },
+  {
+    "file": "069 - SKU Supply Shortage Predictor.md",
+    "title": "069 · SKU Supply Shortage Predictor",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🔵 Month 4–6",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "070 - Supplier ESG Due Diligence Agent.md",
+    "title": "070 · Supplier ESG Due Diligence Agent",
+    "section": "Supply Chain & Procurement",
+    "complexity": "🔵 Month 4–6",
+    "impact": "🛡️ Safety, 🏆"
+  },
+  {
+    "file": "071 - Drone Pipe Counter Inventory Map.md",
+    "title": "071 · Drone Pipe Counter & Inventory Map",
+    "section": "Yard & Logistics",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency, 💰"
+  },
+  {
+    "file": "072 - Pipe Location Digital Map.md",
+    "title": "072 · Pipe Location Digital Map (Live)",
+    "section": "Yard & Logistics",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "073 - Crane Lift GPS Tracker.md",
+    "title": "073 · Crane Lift GPS Tracker",
+    "section": "Yard & Logistics",
+    "complexity": "🔵 Month 4–6",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "074 - Stack Safety Height Monitor.md",
+    "title": "074 · Stack Safety Height Monitor",
+    "section": "Yard & Logistics",
+    "complexity": "🔵 Month 4–6",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "075 - Vessel Loading Stowage Planner.md",
+    "title": "075 · Vessel Loading Stowage Planner",
+    "section": "Yard & Logistics",
+    "complexity": "🔵 Month 4–6",
+    "impact": "⚡ Efficiency, 💰"
+  },
+  {
+    "file": "076 - Truck Turnaround Time Tracker.md",
+    "title": "076 · Truck Turnaround Time Tracker",
+    "section": "Yard & Logistics",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "077 - Yard Safety Camera.md",
+    "title": "077 · Yard Safety Camera (People in Danger Zones)",
+    "section": "Yard & Logistics",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "078 - Coating Sling Damage Camera.md",
+    "title": "078 · Coating Sling Damage Camera",
+    "section": "Yard & Logistics",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety, 💰"
+  },
+  {
+    "file": "079 - Corrosion Risk Pipe Storage Mapper.md",
+    "title": "079 · Corrosion Risk Pipe Storage Mapper",
+    "section": "Yard & Logistics",
+    "complexity": "🔵 Month 4–6",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "080 - Pipe Loading Photographic Record.md",
+    "title": "080 · Pipe Loading Photographic Record",
+    "section": "Yard & Logistics",
+    "complexity": "🟡 Month 2–3",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "081 - Real-Time Working Capital Dashboard.md",
+    "title": "081 · Real-Time Working Capital Dashboard",
+    "section": "Finance & Reporting",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "082 - Commodity Price Impact on Open Orders.md",
+    "title": "082 · Commodity Price Impact on Open Orders",
+    "section": "Finance & Reporting",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "083 - Project-Level Profitability Tracker.md",
+    "title": "083 · Project-Level Profitability Tracker",
+    "section": "Finance & Reporting",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "084 - CapEx ROI Tracker.md",
+    "title": "084 · CapEx ROI Tracker (Post-Commissioning)",
+    "section": "Finance & Reporting",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "085 - EU CBAM Carbon Certificate Generator.md",
+    "title": "085 · EU CBAM Carbon Certificate Generator",
+    "section": "Finance & Reporting",
+    "complexity": "🟢 Week 1–4",
+    "impact": "🛡️ Compliance, 🏆"
+  },
+  {
+    "file": "086 - Financial Scenario Stress-Tester.md",
+    "title": "086 · Financial Scenario Stress-Tester",
+    "section": "Finance & Reporting",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "087 - JJM Payment Delay Predictor.md",
+    "title": "087 · JJM Payment Delay Predictor",
+    "section": "Finance & Reporting",
+    "complexity": "🔵 Month 4–6",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "088 - Tax Audit Readiness Agent.md",
+    "title": "088 · Tax Audit Readiness Agent",
+    "section": "Finance & Reporting",
+    "complexity": "🔵 Month 4–6",
+    "impact": "🛡️ Compliance"
+  },
+  {
+    "file": "089 - Budget vs Actual Variance Alert.md",
+    "title": "089 · Budget vs. Actual Variance Alert",
+    "section": "Finance & Reporting",
+    "complexity": "🟡 Month 2–3",
+    "impact": "💰 Cost Savings"
+  },
+  {
+    "file": "090 - Management Dashboard.md",
+    "title": "090 · Management Dashboard (Sarados Leadership View)",
+    "section": "Finance & Reporting",
+    "complexity": "🟡 Month 2–3",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "091 - PipeGPT Welspun Local LLM.md",
+    "title": "091 · PipeGPT — Welspun-Specific Local LLM",
+    "section": "Strategic & Experimental",
+    "complexity": "🔴 Year 1–2",
+    "impact": "🏆 Competitive"
+  },
+  {
+    "file": "092 - Pipe Digital Passport.md",
+    "title": "092 · Pipe Digital Passport (Blockchain-Anchored)",
+    "section": "Strategic & Experimental",
+    "complexity": "🔴 Year 1–2",
+    "impact": "🏆 Competitive"
+  },
+  {
+    "file": "093 - Bid Strategy Game Simulator.md",
+    "title": "093 · Bid Strategy Game Simulator",
+    "section": "Strategic & Experimental",
+    "complexity": "🔴 Year 1–2",
+    "impact": "🏆 Competitive, 💰"
+  },
+  {
+    "file": "094 - Acoustic Pipe Fingerprinting.md",
+    "title": "094 · Acoustic Pipe Fingerprinting",
+    "section": "Strategic & Experimental",
+    "complexity": "🔴 Year 1–2",
+    "impact": "🏆 Competitive"
+  },
+  {
+    "file": "095 - Sathi Multilingual Shop Floor Voice Assistant.md",
+    "title": "095 · Sathi — Multilingual Shop Floor Voice Assistant",
+    "section": "Strategic & Experimental",
+    "complexity": "🔴 Year 1–2",
+    "impact": "⚡ Efficiency"
+  },
+  {
+    "file": "096 - FloorOS SAP-Free Shop Floor App.md",
+    "title": "096 · FloorOS — SAP-Free Shop Floor Mobile App",
+    "section": "Strategic & Experimental",
+    "complexity": "🔴 Year 1–2",
+    "impact": "⚡ Efficiency, 🛡️"
+  },
+  {
+    "file": "097 - GAN Synthetic X-Ray Training Dataset.md",
+    "title": "097 · GAN Synthetic X-Ray Training Dataset",
+    "section": "Strategic & Experimental",
+    "complexity": "🔴 Year 1–2",
+    "impact": "🛡️ Safety"
+  },
+  {
+    "file": "098 - Hydrogen Pipeline Compliance AI.md",
+    "title": "098 · Hydrogen Pipeline Compliance AI",
+    "section": "Strategic & Experimental",
+    "complexity": "🔴 Year 1–2",
+    "impact": "🏆 Competitive"
+  },
+  {
+    "file": "099 - Predictive Project Delay Early Warning.md",
+    "title": "099 · Predictive Project Delay Early Warning",
+    "section": "Strategic & Experimental",
+    "complexity": "🔴 Year 1–2",
+    "impact": "💰, 🛡️"
+  },
+  {
+    "file": "100 - Pipe Lifecycle Carbon Tracking.md",
+    "title": "100 · Pipe Lifecycle Carbon Tracking (Scope 3)",
+    "section": "Strategic & Experimental",
+    "complexity": "🔴 Year 1–2",
+    "impact": "🏆 Competitive, 🛡️"
+  }
+]

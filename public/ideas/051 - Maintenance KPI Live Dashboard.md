@@ -1,0 +1,139 @@
+# 051 · Maintenance KPI Live Dashboard
+
+> **Section**: Maintenance & Reliability | **Complexity**: 🟡 Month 2–3 | **Impact**: ⚡ Efficiency
+> **Helps**: Anurag Singh, Sarados | **Index**: [[100 AI Ideas - Welspun Pipe Division (Presentation)]]
+
+---
+
+## What It Does
+n8n agent queries SAP PM data nightly and computes MTBF, MTTR, planned vs. unplanned maintenance ratio, and backlog size. Published to a Power BI dashboard visible to Anurag Singh and Sarados in real-time — making maintenance performance objectively visible without manual monthly reports.
+
+---
+
+## Implementation Blueprint
+
+### Architecture
+```
+SAP PM data (work orders, breakdown records, completion times) 
+→ n8n nightly extraction 
+→ Python KPI calculations 
+→ Power BI push dataset 
+→ Live dashboard for Anurag Singh + Sarados
+```
+
+### Tech Stack
+| Component | Tool | Purpose |
+|---|---|---|
+| Data Source | SAP PM (PM01/PM02/PM03 order types) | Maintenance work order data |
+| Orchestration | n8n (nightly cron) | Data extraction and computation |
+| Calculation | Python in n8n Execute Code node | KPI formula calculation |
+| Visualization | Power BI with push dataset | Real-time dashboard |
+| Mobile | Power BI Mobile app | Sarados can check from phone |
+
+### Key SAP PM Tables/BAPIs to Query
+- `AUFK` — Work order header (order type, creation date, equipment)
+- `AUFV` — Work order dates (planned start, actual start, actual completion)
+- `QMEL` — PM notifications (breakdown reports)
+- `VIQMEL` — Notification details (breakdown time, restart time)
+- BAPI: `BAPI_ORDER_GET_DETAIL` — Get specific order details
+
+### KPI Definitions and Formulas
+```python
+def calculate_kpis(work_orders, breakdowns, month):
+    
+    # MTBF (Mean Time Between Failures) — per machine
+    # MTBF = Total operating hours / Number of failures
+    mtbf = {}
+    for machine in all_machines:
+        machine_failures = [b for b in breakdowns if b.equipment == machine and b.month == month]
+        operating_hours = get_operating_hours(machine, month)
+        mtbf[machine] = operating_hours / max(len(machine_failures), 1)
+    
+    # MTTR (Mean Time to Repair)
+    # MTTR = Total repair time / Number of repairs
+    repair_orders = [wo for wo in work_orders if wo.order_type == 'PM04']  # Breakdown orders
+    mttr = sum(wo.actual_duration_hours for wo in repair_orders) / max(len(repair_orders), 1)
+    
+    # PM Adherence (Planned vs. Completed)
+    # Target: >95% of planned PM orders completed on time
+    planned_orders = [wo for wo in work_orders if wo.order_type in ['PM01', 'PM02'] and wo.planned_month == month]
+    completed_on_time = [wo for wo in planned_orders if wo.completion_date <= wo.planned_end_date]
+    pm_adherence_pct = len(completed_on_time) / max(len(planned_orders), 1) * 100
+    
+    # Planned vs. Unplanned Maintenance Ratio
+    planned_hours = sum(wo.actual_duration for wo in work_orders if wo.is_planned)
+    unplanned_hours = sum(wo.actual_duration for wo in work_orders if not wo.is_planned)
+    planned_ratio = planned_hours / max(planned_hours + unplanned_hours, 1) * 100
+    # Target: >75% planned (world class is >85%)
+    
+    # Maintenance Backlog
+    overdue_orders = [wo for wo in work_orders if wo.planned_end_date < today and wo.status != 'COMPLETED']
+    backlog_count = len(overdue_orders)
+    backlog_hours = sum(wo.estimated_hours for wo in overdue_orders)
+    
+    return {
+        'mtbf_by_machine': mtbf,
+        'plant_avg_mtbf_hours': statistics.mean(mtbf.values()),
+        'mttr_hours': mttr,
+        'pm_adherence_pct': pm_adherence_pct,
+        'planned_ratio_pct': planned_ratio,
+        'backlog_count': backlog_count,
+        'backlog_hours': backlog_hours
+    }
+```
+
+### Power BI Dashboard Layout
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  MAINTENANCE KPI DASHBOARD — WELSPUN ANJAR PLANT               │
+│  Month: June 2026 | Updated: Daily 07:00                        │
+├─────────────┬───────────────┬──────────────┬───────────────────┤
+│  MTBF       │   MTTR        │  PM ADHERENCE│  PLANNED/UNPLANNED│
+│  847 hours  │  4.2 hours    │  91%         │  68% / 32%        │
+│  ▲+12%      │  ▼-15%        │  ▼ Target 95%│  🟡 Target 75%    │
+│  vs last mo │  vs last mo   │              │                   │
+├─────────────┴───────────────┴──────────────┴───────────────────┤
+│  TOP 5 MACHINES BY BREAKDOWN FREQUENCY (last 6 months)          │
+│  1. HSAW Drive Motor ████████████████████ 8 breakdowns         │
+│  2. Hydro-Test Pump ███████████████ 6 breakdowns               │
+│  3. Shot Blast Motor ██████████ 4 breakdowns                   │
+│  ...                                                            │
+├─────────────────────────────────────────────────────────────────┤
+│  MAINTENANCE BACKLOG: 12 orders | 47 hours outstanding          │
+│  Oldest overdue: EQ-HSAW-003 lube (15 days overdue) ⚠️          │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Monthly Report (Auto-Generated by n8n on 1st of each month)
+- KPI summary vs. previous month and target
+- Top 5 machines causing most unplanned downtime (Pareto)
+- PM backlog aging report
+- Technician productivity (orders completed per person)
+- Cost: planned vs. unplanned maintenance spend
+
+### Estimated Build Time
+- SAP PM data extraction: 2–3 days
+- KPI calculations: 1 day
+- Power BI dashboard: 2 days
+- Total: ~1 week
+
+### Cost
+- Power BI Pro: $10/user/month (or use existing M365 license)
+- n8n: Free
+- SAP: Existing license
+
+---
+
+## Related Ideas
+- [[046 - Predictive Maintenance Dashboard]] — condition monitoring feeds into MTBF improvement
+- [[052 - Vendor SLA Adherence Tracker]] — vendor contribution to MTTR
+- [[048 - SAP PM Order Auto-Scheduler]] — PM adherence KPI improves with this tool
+- [[090 - Management Dashboard]] — maintenance KPIs feed Sarados executive view
+- [[040 - Production OEE Live Dashboard]] — OEE availability component correlates with MTBF
+
+---
+
+## Notes
+- The most powerful metric is the Planned/Unplanned ratio — driving it above 75% is the single biggest indicator of maintenance maturity
+- MTBF can be misleading for machines with very different operating hours — normalize by operating hours not calendar time
+- Build a monthly "maintenance investment ROI" report: maintenance spend vs. production downtime prevented — makes the case for maintenance budget to Sarados
