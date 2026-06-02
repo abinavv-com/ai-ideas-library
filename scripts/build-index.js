@@ -1,13 +1,18 @@
 import fs from 'fs';
 import path from 'path';
 
-const IDEAS_DIR = path.resolve('../HMC/AI Ideas');
+// On Vercel the markdown files are already in public/ideas (committed to repo).
+// Locally they may live in ../HMC/AI Ideas and get copied on first predev run.
 const PUBLIC_IDEAS_DIR = path.resolve('./public/ideas');
 const INDEX_FILE = path.resolve('./public/ideas_index.json');
 
 if (!fs.existsSync(PUBLIC_IDEAS_DIR)) {
   fs.mkdirSync(PUBLIC_IDEAS_DIR, { recursive: true });
 }
+
+// Try the local source dir first; fall back to public/ideas (e.g. on Vercel)
+const LOCAL_SRC = path.resolve('../HMC/AI Ideas');
+const IDEAS_DIR = fs.existsSync(LOCAL_SRC) ? LOCAL_SRC : PUBLIC_IDEAS_DIR;
 
 const files = fs.readdirSync(IDEAS_DIR).filter(f => f.endsWith('.md'));
 const index = [];
@@ -37,8 +42,10 @@ files.forEach(file => {
     impact
   });
 
-  // Copy to public folder
-  fs.copyFileSync(filePath, path.join(PUBLIC_IDEAS_DIR, file));
+  // Copy to public folder only when reading from the local source dir
+  if (IDEAS_DIR !== PUBLIC_IDEAS_DIR) {
+    fs.copyFileSync(filePath, path.join(PUBLIC_IDEAS_DIR, file));
+  }
 });
 
 fs.writeFileSync(INDEX_FILE, JSON.stringify(index, null, 2));
