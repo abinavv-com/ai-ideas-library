@@ -802,6 +802,302 @@ html, body {
 .skel-md    { height: 13px; width: 75%; }
 .skel-sm    { height: 13px; width: 60%; }
 
+/* ── New Blueprint Button ─────────────────────────────── */
+.sidebar-new-idea {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-100);
+  flex-shrink: 0;
+}
+
+.new-idea-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 7px 12px;
+  background: rgba(245, 158, 11, 0.06);
+  border: 1px dashed rgba(245, 158, 11, 0.35);
+  border-radius: 5px;
+  color: var(--amber);
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.new-idea-btn svg {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+}
+
+.new-idea-btn:hover {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: var(--amber);
+}
+
+/* ── Card badges (edited / custom) ───────────────────── */
+.card-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 7.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  padding: 1px 4px;
+  border-radius: 2px;
+  margin-left: 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.badge-edited {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: var(--amber);
+}
+
+.badge-custom {
+  background: rgba(167, 139, 250, 0.15);
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  color: var(--violet);
+}
+
+/* ── Serial badges (in doc-serial) ───────────────────── */
+.serial-badge {
+  font-size: 9px;
+  font-family: var(--font-mono);
+  padding: 1px 6px;
+  border-radius: 3px;
+  letter-spacing: 0.08em;
+  font-style: normal;
+}
+
+.badge-custom-serial {
+  background: rgba(167, 139, 250, 0.15);
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  color: var(--violet);
+}
+
+.badge-edited-serial {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: var(--amber);
+}
+
+.badge-editing-serial {
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  color: var(--cyan);
+}
+
+/* ── Doc actions bar ──────────────────────────────────── */
+.doc-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border-200);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--t3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background 0.13s, border-color 0.13s, color 0.13s;
+  white-space: nowrap;
+}
+
+.action-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--t3);
+  color: var(--t2);
+}
+
+.action-btn.btn-primary {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.45);
+  color: var(--amber);
+}
+
+.action-btn.btn-primary:hover {
+  background: rgba(245, 158, 11, 0.18);
+  border-color: var(--amber);
+}
+
+.btn-delete {
+  border-color: rgba(248, 113, 113, 0.3);
+  color: var(--red);
+  background: rgba(248, 113, 113, 0.05);
+}
+.btn-delete:hover {
+  background: rgba(248, 113, 113, 0.12);
+  border-color: var(--red);
+  color: var(--red);
+}
+
+/* ── Editor ───────────────────────────────────────────── */
+.editor-container {
+  width: 100%;
+}
+
+.editor-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.editor-toolbar {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-100);
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+}
+
+.editor-hint {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--t4);
+  letter-spacing: 0.08em;
+}
+
+.md-editor {
+  width: 100%;
+  min-height: 480px;
+  padding: 18px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-100);
+  border-radius: 0 0 5px 5px;
+  color: var(--t1);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.75;
+  resize: vertical;
+  outline: none;
+  tab-size: 2;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.md-editor:focus {
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.05);
+}
+
+.preview-panel {
+  padding: 24px 0;
+}
+
+/* ── New idea form fields ─────────────────────────────── */
+.new-idea-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.field-grid {
+  flex-direction: row;
+  gap: 12px;
+}
+
+.field-grid > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.field-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--t3);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.field-required {
+  color: var(--red);
+  margin-left: 2px;
+}
+
+.field-hint {
+  color: var(--t4);
+  font-size: 9px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--font-body);
+}
+
+.field-input,
+.field-select {
+  padding: 8px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-100);
+  border-radius: 5px;
+  color: var(--t1);
+  font-family: var(--font-body);
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.field-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' fill='none'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%2364748b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  padding-right: 28px;
+}
+
+.field-select option {
+  background: var(--bg-card);
+  color: var(--t1);
+}
+
+.field-input:focus,
+.field-select:focus {
+  border-color: rgba(245, 158, 11, 0.45);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.05);
+}
+
+.field-input.field-error {
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.08);
+}
+
+.ni-textarea {
+  min-height: 340px;
+  border-radius: 0 0 5px 5px;
+}
+
+.new-idea-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 4px;
+}
+
 /* ── No Results ───────────────────────────────────────── */
 .no-results {
   padding: 36px 18px;

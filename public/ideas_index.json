@@ -698,5 +698,33 @@
     "section": "Strategic & Experimental",
     "complexity": "🔴 Year 1–2",
     "impact": "🏆 Competitive, 🛡️"
+  },
+  {
+    "file": "101 - SAP PDF to Actionable Data.md",
+    "title": "101 - SAP PDF to Actionable Data",
+    "section": "Uncategorized",
+    "complexity": "Unknown",
+    "impact": "Unknown"
+  },
+  {
+    "file": "102 - Excel Maintenance Logs Dashboard.md",
+    "title": "102 - Excel Maintenance Logs Dashboard",
+    "section": "Uncategorized",
+    "complexity": "Unknown",
+    "impact": "Unknown"
+  },
+  {
+    "file": "103 - Financial Data to Board Presentations.md",
+    "title": "103 - Financial Data to Board Presentations",
+    "section": "Uncategorized",
+    "complexity": "Unknown",
+    "impact": "Unknown"
+  },
+  {
+    "file": "104 - Word Reports to Welspun PowerPoint.md",
+    "title": "104 - Word Reports to Welspun PowerPoint",
+    "section": "Uncategorized",
+    "complexity": "Unknown",
+    "impact": "Unknown"
   }
 ]
